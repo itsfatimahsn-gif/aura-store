@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AURA X | Product Information</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            font-family: Arial, Helvetica, sans-serif;
+            background: #090b10;
+            color: #f7f5f0;
+        }
+
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 24px 8%;
+            border-bottom: 1px solid #252832;
+        }
+
+        .logo {
+            color: #e9bd70;
+            font-size: 27px;
+            font-weight: bold;
+            letter-spacing: 4px;
+        }
+
+        nav a {
+            color: #f7f5f0;
+            text-decoration: none;
+            margin-left: 22px;
+            font-size: 13px;
+        }
+
+        nav a:hover {
+            color: #e9bd70;
+        }
+
+        main {
+            max-width: 1100px;
+            margin: auto;
+            padding: 55px 8%;
+        }
+
+        .eyebrow {
+            color: #e9bd70;
+            font-size: 12px;
+            letter-spacing: 4px;
+            text-transform: uppercase;
+        }
+
+        h1 {
+            font-size: clamp(38px, 6vw, 64px);
+            margin: 18px 0;
+        }
+
+        .intro {
+            color: #a6a8b0;
+            line-height: 1.8;
+            max-width: 700px;
+        }
+
+        .product-card {
+            display: flex;
+            align-items: center;
+            gap: 40px;
+            margin-top: 40px;
+            padding: 30px;
+            border: 1px solid #292c35;
+            border-radius: 18px;
+            background: #101219;
+        }
+
+        .product-image {
+            flex: 1;
+            text-align: center;
+        }
+
+        .product-image img {
+            width: 100%;
+            max-width: 380px;
+            height: 280px;
+            object-fit: contain;
+            border-radius: 10px;
+        }
+
+        .product-info {
+            flex: 1;
+        }
+
+        .product-info h2 {
+            color: #e9bd70;
+            font-size: 30px;
+        }
+
+        .product-info p {
+            color: #a6a8b0;
+            line-height: 1.8;
+        }
+
+        .price {
+            color: #f7f5f0 !important;
+            font-size: 28px;
+            font-weight: bold;
+        }
+
+        .specifications {
+            margin-top: 65px;
+        }
+
+        .specifications h2 {
+            font-size: 28px;
+        }
+
+        .spec-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 18px;
+            margin-top: 25px;
+        }
+
+        .spec-card {
+            padding: 24px;
+            background: #101219;
+            border: 1px solid #292c35;
+            border-radius: 12px;
+        }
+
+        .spec-card h3 {
+            color: #e9bd70;
+            font-size: 17px;
+        }
+
+        .spec-card p {
+            color: #a6a8b0;
+            font-size: 14px;
+            line-height: 1.7;
+        }
+
+        .order-button {
+            display: inline-block;
+            margin-top: 15px;
+            padding: 16px 26px;
+            background: #e9bd70;
+            color: #111116;
+            text-decoration: none;
+            font-weight: bold;
+            letter-spacing: 1px;
+        }
+
+        .order-button:hover {
+            background: #f8d69c;
+        }
+
+        .back-link {
+            display: inline-block;
+            margin-top: 35px;
+            color: #e9bd70;
+            text-decoration: none;
+        }
+
+        footer {
+            border-top: 1px solid #252832;
+            padding: 28px 8%;
+            text-align: center;
+            color: #858894;
+            font-size: 12px;
+            letter-spacing: 1px;
+        }
+
+        @media (max-width: 750px) {
+            header {
+                flex-direction: column;
+                gap: 18px;
+            }
+
+            nav a {
+                margin: 0 8px;
+            }
+
+            .product-card {
+                flex-direction: column;
+                padding: 22px;
+            }
+
+            .spec-grid {
+                grid-template-columns: 1fr;
+            }
+
+            main {
+                padding: 40px 6%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <!-- AURA X product information page -->
+
+    <header>
+        <div class="logo">AURA X</div>
+
+        <nav>
+            <a href="index.html">HOME</a>
+            <a href="product.html">PRODUCT INFO</a>
+            <a href="order.html">ORDER</a>
+        </nav>
+    </header>
+
+    <main>
+        <p class="eyebrow">Discover AURA X</p>
+
+        <h1>PRODUCT INFORMATION</h1>
+
+        <p class="intro">
+            Explore AURA X wireless headphones, designed for a modern
+            lifestyle with a stylish over-ear look and an immersive
+            everyday listening experience.
+        </p>
+
+        <section class="product-card">
+            <div class="product-image">
+                <img
+                    src="https://images.unsplash.com/photo-1505740420928-5e560c06d30e?auto=format&fit=crop&w=900&q=85"
+                    alt="AURA X style headphones"
+                >
+            </div>
+
+            <div class="product-info">
+                <p class="eyebrow">Premium Audio Collection</p>
+
+                <h2>AURA X Wireless Headphones</h2>
+
+                <p>
+                    Enjoy your favourite music with a modern design,
+                    comfortable over-ear style and wireless convenience.
+                    AURA X is designed for music, study, work and travel.
+                </p>
+
+                <p class="price">Rs. 12,999</p>
+
+                <a class="order-button" href="order.html">
+                    ORDER NOW &rarr;
+                </a>
+            </div>
+        </section>
+
+        <section class="specifications">
+            <p class="eyebrow">Product details</p>
+            <h2>FEATURES &amp; SPECIFICATIONS</h2>
+
+            <div class="spec-grid">
+                <article class="spec-card">
+                    <h3>01 / Audio Experience</h3>
+                    <p>
+                        Designed for rich-sounding music and clear
+                        everyday listening across your favourite content.
+                    </p>
+                </article>
+
+                <article class="spec-card">
+                    <h3>02 / Wireless Design</h3>
+                    <p>
+                        A cable-free listening style suited to daily
+                        routines, study sessions and travel.
+                    </p>
+                </article>
+
+                <article class="spec-card">
+                    <h3>03 / Over-Ear Comfort</h3>
+                    <p>
+                        An over-ear headphone design made for a
+                        comfortable and stylish listening experience.
+                    </p>
+                </article>
+
+                <article class="spec-card">
+                    <h3>04 / Modern Appearance</h3>
+                    <p>
+                        A clean, contemporary look that complements
+                        everyday use and personal style.
+                    </p>
+                </article>
+
+                <article class="spec-card">
+                    <h3>05 / Everyday Use</h3>
+                    <p>
+                        Suitable for music, online learning, entertainment
+                        and listening while working.
+                    </p>
+                </article>
+
+                <article class="spec-card">
+                    <h3>06 / Product Price</h3>
+                    <p>
+                        Listed price: Rs. 12,999. Visit the order page
+                        to enter your details in the demonstration form.
+                    </p>
+                </article>
+            </div>
+        </section>
+
+        <a class="back-link" href="index.html">
+            &larr; Back to Home
+        </a>
+    </main>
+
+    <footer>
+        &copy; 2026 AURA X AUDIO — SOUND WITHOUT LIMITS.
+    </footer>
+</body>
+</html>
