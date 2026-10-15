@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AURA X | Premium Audio</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            font-family: Arial, Helvetica, sans-serif;
+            background: #090b10;
+            color: #f7f5f0;
+        }
+
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 24px 8%;
+            border-bottom: 1px solid #252832;
+        }
+
+        .logo {
+            color: #e9bd70;
+            font-size: 27px;
+            font-weight: bold;
+            letter-spacing: 4px;
+        }
+
+        header p {
+            color: #a6a8b0;
+            font-size: 11px;
+            letter-spacing: 2px;
+        }
+
+        main {
+            max-width: 1200px;
+            margin: auto;
+            padding: 70px 8%;
+        }
+
+        .hero {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 50px;
+        }
+
+        .product-info {
+            flex: 1;
+        }
+
+        .eyebrow {
+            color: #e9bd70;
+            font-size: 12px;
+            letter-spacing: 4px;
+            text-transform: uppercase;
+        }
+
+        h1 {
+            font-size: clamp(48px, 7vw, 86px);
+            line-height: 0.98;
+            margin: 24px 0;
+            letter-spacing: -3px;
+        }
+
+        .description {
+            color: #a6a8b0;
+            max-width: 440px;
+            line-height: 1.9;
+        }
+
+        .price {
+            font-size: 30px;
+            font-weight: bold;
+            margin: 28px 0 8px;
+        }
+
+        .availability {
+            color: #85d6a0;
+            font-size: 13px;
+        }
+
+        .features {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            margin: 28px 0;
+        }
+
+        .feature {
+            border: 1px solid #343741;
+            border-radius: 30px;
+            padding: 10px 14px;
+            color: #d6d6dc;
+            font-size: 12px;
+        }
+
+        .buy-button {
+            display: inline-block;
+            background: #e9bd70;
+            color: #111116;
+            text-decoration: none;
+            padding: 17px 30px;
+            font-weight: bold;
+            letter-spacing: 2px;
+            transition: 0.2s;
+        }
+
+        .buy-button:hover {
+            background: #f8d69c;
+            transform: translateY(-2px);
+        }
+
+        .product-visual {
+            flex: 1;
+            min-height: 390px;
+            border: 1px solid #292c35;
+            border-radius: 20px;
+            background: radial-gradient(ellipse at center, #33303a 0%, #171820 45%, #0c0e14 75%);
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            padding: 30px;
+            text-align: center;
+        }
+
+        .product-visual img {
+            display: block;
+            width: 100%;
+            max-width: 430px;
+            height: 270px;
+            object-fit: contain;
+        }
+
+        .visual-caption {
+            color: #e9bd70;
+            letter-spacing: 5px;
+            font-size: 12px;
+            margin-top: 22px;
+        }
+
+        .details {
+            margin-top: 90px;
+            border-top: 1px solid #292c35;
+            padding-top: 40px;
+        }
+
+        .details h2 {
+            font-size: 28px;
+        }
+
+        .detail-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 18px;
+            margin-top: 28px;
+        }
+
+        .detail-card {
+            border: 1px solid #292c35;
+            border-radius: 12px;
+            padding: 24px;
+            background: #101219;
+        }
+
+        .detail-card h3 {
+            color: #e9bd70;
+        }
+
+        .detail-card p {
+            color: #a6a8b0;
+            line-height: 1.7;
+            font-size: 14px;
+        }
+
+        footer {
+            border-top: 1px solid #252832;
+            padding: 28px 8%;
+            color: #858894;
+            text-align: center;
+            font-size: 12px;
+            letter-spacing: 1px;
+        }
+
+        @media (max-width: 750px) {
+            header {
+                padding: 20px 6%;
+            }
+
+            header p {
+                max-width: 130px;
+                text-align: right;
+                line-height: 1.6;
+            }
+
+            main {
+                padding: 45px 6%;
+            }
+
+            .hero {
+                flex-direction: column;
+                align-items: stretch;
+            }
+
+            h1 {
+                font-size: 58px;
+            }
+
+            .product-visual {
+                min-height: 300px;
+            }
+
+            .product-visual img {
+                height: 220px;
+            }
+
+            .detail-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="logo">AURA X</div>
+        <p>PURE SOUND. BOLD STYLE.</p>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="product-info">
+                <p class="eyebrow">Introducing the next level</p>
+
+                <h1>HEAR<br>EVERY<br>DETAIL.</h1>
+
+                <p class="description">
+                    Meet AURA X — premium wireless headphones designed
+                    for immersive sound, modern style and everyday comfort.
+                    Your music deserves more.
+                </p>
+
+                <p class="price">Rs. 12,999</p>
+                <p class="availability">● Available for order</p>
+
+                <div class="features">
+                    <span class="feature">Premium Audio</span>
+                    <span class="feature">Wireless Design</span>
+                    <span class="feature">All-Day Comfort</span>
+                </div>
+
+                <a class="buy-button" href="order.html">BUY NOW &rarr;</a>
+            </div>
+
+            <div class="product-visual">
+                <img
+                    src="https://images.unsplash.com/photo-1505740420928-5e560c06d30e?auto=format&fit=crop&w=900&q=85"
+                    alt="Premium headphones product display"
+                >
+                <p class="visual-caption">ENGINEERED FOR IMMERSION</p>
+            </div>
+        </section>
+
+        <section class="details">
+            <p class="eyebrow">The AURA experience</p>
+            <h2>BUILT FOR YOUR WORLD.</h2>
+
+            <div class="detail-grid">
+                <article class="detail-card">
+                    <h3>01 / Immersive Sound</h3>
+                    <p>
+                        Enjoy rich bass and clear vocals for music,
+                        entertainment and everyday listening.
+                    </p>
+                </article>
+
+                <article class="detail-card">
+                    <h3>02 / Wireless Freedom</h3>
+                    <p>
+                        A clean, modern design made for your daily
+                        routine, work sessions and travel.
+                    </p>
+                </article>
+
+                <article class="detail-card">
+                    <h3>03 / Lasting Comfort</h3>
+                    <p>
+                        A modern over-ear design built around comfortable
+                        everyday listening.
+                    </p>
+                </article>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        &copy; 2026 AURA X AUDIO — SOUND WITHOUT LIMITS.
+    </footer>
+</body>
+</html>
