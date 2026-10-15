@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AURA X | Place Your Order</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            font-family: Arial, Helvetica, sans-serif;
+            background: #090b10;
+            color: #f7f7f7;
+        }
+
+        header {
+            padding: 24px 8%;
+            border-bottom: 1px solid #292929;
+        }
+
+        .logo {
+            color: #e7bd68;
+            font-size: 27px;
+            font-weight: bold;
+            letter-spacing: 4px;
+        }
+
+        .logo span {
+            display: block;
+            color: #aaa;
+            font-size: 10px;
+            letter-spacing: 5px;
+            margin-top: 5px;
+        }
+
+        main {
+            max-width: 1000px;
+            margin: 45px auto;
+            padding: 0 22px;
+        }
+
+        .back {
+            color: #e7bd68;
+            text-decoration: none;
+        }
+
+        h1 {
+            font-size: 38px;
+            margin-bottom: 10px;
+        }
+
+        .intro {
+            color: #aaa;
+            line-height: 1.6;
+            margin-bottom: 30px;
+        }
+
+        .order-layout {
+            display: grid;
+            grid-template-columns: 1fr 1.2fr;
+            gap: 25px;
+        }
+
+        .card {
+            background: #12151c;
+            border: 1px solid #30313a;
+            border-radius: 14px;
+            padding: 26px;
+        }
+
+        .product-label {
+            color: #e7bd68;
+            font-size: 12px;
+            letter-spacing: 3px;
+        }
+
+        .product-name {
+            font-size: 25px;
+            margin: 15px 0;
+        }
+
+        .price {
+            color: #e7bd68;
+            font-size: 30px;
+            font-weight: bold;
+            margin: 20px 0;
+        }
+
+        .details {
+            color: #c5c5c5;
+            line-height: 1.9;
+            padding-left: 20px;
+        }
+
+        h2 {
+            margin-top: 0;
+            font-size: 23px;
+        }
+
+        label {
+            display: block;
+            margin: 16px 0 8px;
+            color: #ddd;
+            font-size: 14px;
+        }
+
+        input, textarea, select {
+            width: 100%;
+            padding: 13px;
+            border-radius: 7px;
+            border: 1px solid #393b45;
+            background: #090b10;
+            color: white;
+            font-size: 15px;
+        }
+
+        textarea {
+            resize: vertical;
+            min-height: 85px;
+        }
+
+        .submit-button {
+            display: block;
+            width: 100%;
+            margin-top: 24px;
+            padding: 15px;
+            border: none;
+            border-radius: 7px;
+            background: #e7bd68;
+            color: #111;
+            font-size: 15px;
+            font-weight: bold;
+            cursor: pointer;
+        }
+
+        .submit-button:hover {
+            background: #f3d38c;
+        }
+
+        .note {
+            color: #999;
+            font-size: 12px;
+            line-height: 1.6;
+            margin-top: 16px;
+        }
+
+        footer {
+            text-align: center;
+            padding: 25px;
+            color: #777;
+            border-top: 1px solid #292929;
+            margin-top: 45px;
+        }
+
+        @media (max-width: 700px) {
+            .order-layout {
+                grid-template-columns: 1fr;
+            }
+
+            h1 {
+                font-size: 30px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="logo">
+            AURA X
+            <span>PREMIUM AUDIO</span>
+        </div>
+    </header>
+
+    <main>
+        <a class="back" href="index.html">&larr; Back to homepage</a>
+
+        <h1>Place Your Order</h1>
+        <p class="intro">
+            Complete the form below to request your AURA X Premium Wireless Headphones.
+        </p>
+
+        <div class="order-layout">
+
+            <section class="card">
+                <p class="product-label">YOUR SELECTED PRODUCT</p>
+                <h2 class="product-name">AURA X Premium Wireless Headphones</h2>
+                <p class="price">Rs. 12,999</p>
+
+                <ul class="details">
+                    <li>Premium wireless sound</li>
+                    <li>Comfortable over-ear design</li>
+                    <li>Long-lasting battery</li>
+                    <li>Elegant premium finish</li>
+                </ul>
+            </section>
+
+            <section class="card">
+                <h2>Customer Details</h2>
+
+                <form action="#" method="get">
+                    <label for="fullname">Full Name</label>
+                    <input type="text" id="fullname" name="fullname"
+                           placeholder="Enter your full name" required>
+
+                    <label for="email">Email Address</label>
+                    <input type="email" id="email" name="email"
+                           placeholder="Enter your email" required>
+
+                    <label for="phone">Phone Number</label>
+                    <input type="tel" id="phone" name="phone"
+                           placeholder="Enter your phone number" required>
+
+                    <label for="address">Delivery Address</label>
+                    <textarea id="address" name="address"
+                              placeholder="Enter your complete address" required></textarea>
+
+                    <label for="quantity">Quantity</label>
+                    <select id="quantity" name="quantity">
+                        <option value="1">1 Headphone</option>
+                        <option value="2">2 Headphones</option>
+                        <option value="3">3 Headphones</option>
+                    </select>
+
+                    <button class="submit-button" type="submit">
+                        Submit Order Request
+                    </button>
+
+                    <p class="note">
+                        Demo order form for the AURA X website project.
+                        Online order processing is not connected.
+                    </p>
+                </form>
+            </section>
+
+        </div>
+    </main>
+
+    <footer>
+        &copy; 2026 AURA X. Premium Audio Experience.
+    </footer>
+
+</body>
+</html>
